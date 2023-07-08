@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <form id="survey form" action="">
+        <fieldset>
+            <label for="first-name">Enter your First Name: <input id="first-name" name="first-name" type="text"
+                    required></input></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text"
+                    required></input></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required></input></label>
+            <label for="new-password">Create a New Password: <input id="new-password" name="new-password"
+                    type="password" pattern="[a-z0-5]{8,}" required></input></label>
+        </fieldset>
+        <fieldset>
+            <label for="student"><input id="student" type="radio" name="" class="inline"></label>Student</label>
+            <label for="parent"><input id="parent" type="radio" name="" class="inline"></input> Parent</label>
+            <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions"
+                    class="inline"></input>
+                I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file"
+                    name="file" /></label>
+            <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13"
+                    max="120" /></label>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Instagram</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Facebook</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit"></input>
+
+    </form>
+</body>
+
+</html>
